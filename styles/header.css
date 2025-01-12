@@ -13,14 +13,20 @@ header .container {
 #profile {
   display: flex;
   gap: 32px;
+  align-items: center; /*adicionei essa linha*/
 }
 
 #profile img {
-  object-fit: contain;
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 50%;
+  /*object-fit: contain; eu tinha feito assim*/
 }
 
 #profile > div /*a primeira div dentro de profile*/ {
   max-width: 384px;
+  margin-right: 15px; /*adicionei essa linha*/
 }
 
 #profile h1 {
